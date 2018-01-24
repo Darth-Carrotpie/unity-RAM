@@ -9,9 +9,9 @@ AudioMixerController:
   m_OutputGroup: {fileID: 0}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
+  - {fileID: 245109705724547930}
   - {fileID: 245106468149445952}
   - {fileID: 24500006}
-  - {fileID: 245109705724547930}
   - {fileID: 245478903540214030}
   m_StartSnapshot: {fileID: 24500006}
   m_SuspendThreshold: -80
@@ -67,7 +67,7 @@ AudioMixerSnapshotController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Snapshot
+  m_Name: adventure
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 65418701de5863f4cad87ea60078bb40
   m_FloatValues: {}

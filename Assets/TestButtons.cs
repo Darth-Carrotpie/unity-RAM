@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class TestButtons : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    
+
+    void Start () {
 		
 	}
 	
@@ -13,6 +14,7 @@ public class TestButtons : MonoBehaviour {
 	void Update () {
 		
 	}
+    //music testing:
     public void Test1()
     {
         EventManager.TriggerEvent(EventName.BookerStory, BookerMessage.Write());
@@ -25,4 +27,10 @@ public class TestButtons : MonoBehaviour {
     {
         EventManager.TriggerEvent(EventName.GendarmeActivityStory, BookerMessage.Write());
     }
+    //sound fx testing:
+    public void TestSound1()
+    {
+        EventManager.TriggerEvent(EventName.StructureSelected, BookerMessage.Write());
+    }
+
 }

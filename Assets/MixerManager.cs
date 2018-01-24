@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using System;
+
 public class MixerManager : MonoBehaviour {
-
+    public SnapshotForEvent.SnapshotsState snapshotState;
     public AudioMixer mixer;
-    AudioMixerSnapshot[] snapshots;
-    // public Dictionary<EventName, SnapshotStates> snapshotForEvent = new Dictionary<EventName, SnapshotStates>();
-   // public SnapshotForEvent[] snapshotsForEvents = new SnapshotForEvent[Enum.GetValues(typeof(EventName)).Length];
-
-    void Start() {
-        //mixer.TransitionToSnapshots();
+    public bool triggerGoBack = false;
+    public float delayToGoBack = 5;
+    float counter;
+    private void Update()
+    {
+        if(triggerGoBack)
+            counter += Time.deltaTime;
+        if(counter > delayToGoBack)
+        {
+            counter = 0f;
+            triggerGoBack = false;
+            mixer.TransitionToSnapshots(snapshotState.snapshots, snapshotState.weights, snapshotState.timeToReach);
+        }
     }
 
-    void Update() {
-
-    }
 }
