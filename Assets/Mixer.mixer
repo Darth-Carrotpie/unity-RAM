@@ -10,7 +10,9 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 245106468149445952}
+  - {fileID: 245447503640932052}
   - {fileID: 245109705724547930}
+  - {fileID: 245019102571794594}
   - {fileID: 24500006}
   - {fileID: 245478903540214030}
   m_StartSnapshot: {fileID: 24500006}
@@ -29,7 +31,7 @@ AudioMixerController:
     - 4941396c55e0cfa45a410827e2ef08d7
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 245106468149445952}
+  m_TargetSnapshot: {fileID: 24500006}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -305,6 +307,20 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!245 &245019102571794594
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: main intermediate
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 57800dda8ffe5fb4eac8bc77e7cba4db
+  m_FloatValues:
+    e1dfb1b4ca0f85a42bebfc52c8d33074: -80
+    d4785d7a2a48a484183740281c60b9f8: -80
+    27d9d58ce354e324da06ded90ea7138b: -2.5738313
+    b6657e4ef224bc84a950271733fdc4be: 9.925883
+  m_TransitionOverrides: {}
 --- !u!245 &245106468149445952
 AudioMixerSnapshotController:
   m_ObjectHideFlags: 0
@@ -334,6 +350,22 @@ AudioMixerSnapshotController:
     d4785d7a2a48a484183740281c60b9f8: -80
     27d9d58ce354e324da06ded90ea7138b: -2.5738313
     b6657e4ef224bc84a950271733fdc4be: 9.925883
+  m_TransitionOverrides: {}
+--- !u!245 &245447503640932052
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: fight inter
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 53c91047aec7dd34dbeb56ad221b53c7
+  m_FloatValues:
+    e1dfb1b4ca0f85a42bebfc52c8d33074: 0
+    d4785d7a2a48a484183740281c60b9f8: -80
+    27d9d58ce354e324da06ded90ea7138b: -80
+    de181fad947200e41802f0ccc141bba1: 0
+    b6657e4ef224bc84a950271733fdc4be: 3.2656894
+    1827dd3fb799b2145b0202933517bfd8: -0.08374829
   m_TransitionOverrides: {}
 --- !u!245 &245478903540214030
 AudioMixerSnapshotController:
