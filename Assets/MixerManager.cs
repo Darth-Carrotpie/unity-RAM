@@ -21,5 +21,9 @@ public class MixerManager : MonoBehaviour {
             mixer.TransitionToSnapshots(snapshotState.snapshots, snapshotState.weights, snapshotState.timeToReach);
         }
     }
+    void Freq()
+    {
+        
+    }
 
 }

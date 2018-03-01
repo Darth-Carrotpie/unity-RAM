@@ -17,13 +17,11 @@ public class SnapshotForEvent : MonoBehaviour
         public float[] weights;
         public float timeToReach;
     }
-
     private void Start()
     {
         mixerMng = GetComponentInParent<MixerManager>();
         EventManager.StartListening(whatHappened, LaunchSnapshotState);
     }
-
     void LaunchSnapshotState(BookerMessage msg)
     {
         int i = Random.Range(0, availableStates.Length);
