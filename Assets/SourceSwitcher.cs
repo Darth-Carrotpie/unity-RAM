@@ -14,6 +14,7 @@ public class SourceSwitcher : MonoBehaviour {
         public AudioClip clip2;
         public AudioClip clip3;
         public AudioClip clip4;
+        public AudioClip clip5;
     }
     public List<int> playlist = new List<int>();
     int currentlyPlayingInPlaylist = 0;
@@ -43,10 +44,9 @@ public class SourceSwitcher : MonoBehaviour {
         sources[2].clip = trackGroups[playlist[currentlyPlayingInPlaylist]].clip2;
         sources[3].clip = trackGroups[playlist[currentlyPlayingInPlaylist]].clip3;
         sources[4].clip = trackGroups[playlist[currentlyPlayingInPlaylist]].clip4;
+        sources[5].clip = trackGroups[playlist[currentlyPlayingInPlaylist]].clip4;
         if (currentlyPlayingInPlaylist < playlist.Count - 1)
             currentlyPlayingInPlaylist++;
-        /*else
-            currentlyPlayingInPlaylist=0;*/
 
         foreach (AudioSource source in sources)
         {
