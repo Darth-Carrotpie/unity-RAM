@@ -15,8 +15,7 @@ AudioMixerController:
   - {fileID: 245106468149445952}
   - {fileID: 245109705724547930}
   - {fileID: 245747021806769252}
-  - {fileID: 245398488108819490}
-  m_StartSnapshot: {fileID: 24500006}
+  m_StartSnapshot: {fileID: 245802836189566740}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
@@ -32,7 +31,7 @@ AudioMixerController:
     - 242cd8d328fd87745956bbd9470ac68b
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 245398488108819490}
+  m_TargetSnapshot: {fileID: 245802836189566740}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -301,23 +300,6 @@ AudioMixerSnapshotController:
     b6657e4ef224bc84a950271733fdc4be: 9.925883
     66e233ae6b4525c40a97299e9320b21a: -80
   m_TransitionOverrides: {}
---- !u!245 &245398488108819490
-AudioMixerSnapshotController:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Region 1 - intermediate
-  m_AudioMixer: {fileID: 24100000}
-  m_SnapshotID: 5fcebeaa2c9c04e44ab66cbfc5735eb0
-  m_FloatValues:
-    391f10816cf48b54fbc198924cb8c2c1: -80
-    8e903618859167441b364cd0950e793f: -80
-    27d9d58ce354e324da06ded90ea7138b: -80
-    de181fad947200e41802f0ccc141bba1: -80
-    b6657e4ef224bc84a950271733fdc4be: -80
-    db7db08e6dd6e5c46b3f615f9df6c2d2: -80
-    66e233ae6b4525c40a97299e9320b21a: -80
-  m_TransitionOverrides: {}
 --- !u!245 &245478903540214030
 AudioMixerSnapshotController:
   m_ObjectHideFlags: 0
@@ -334,7 +316,13 @@ AudioMixerSnapshotController:
     b6657e4ef224bc84a950271733fdc4be: -80
     db7db08e6dd6e5c46b3f615f9df6c2d2: -80
     66e233ae6b4525c40a97299e9320b21a: -80
-  m_TransitionOverrides: {}
+  m_TransitionOverrides:
+    391f10816cf48b54fbc198924cb8c2c1: 3
+    f3ec569102457d9459009d54b214bd5a: 2
+    ed27ae16ec1c034419f19ef4795cbc19: 2
+    8e903618859167441b364cd0950e793f: 2
+    db7db08e6dd6e5c46b3f615f9df6c2d2: 3
+    66e233ae6b4525c40a97299e9320b21a: 2
 --- !u!245 &245747021806769252
 AudioMixerSnapshotController:
   m_ObjectHideFlags: 0
