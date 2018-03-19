@@ -884,6 +884,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e3cb01267233be41be3bf43021b5455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 005ccfb75aa41cc4ebdfb1e470be2db5, type: 2}
+  buttonPrefab: {fileID: 1556582370194890, guid: 6517c389d850f744fbe9799c210bc724,
+    type: 2}
 --- !u!114 &438606875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2884,6 +2887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ffff2ad3b5b9684f87dfa248e791191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 005ccfb75aa41cc4ebdfb1e470be2db5, type: 2}
 --- !u!1 &2049625744
 GameObject:
   m_ObjectHideFlags: 0

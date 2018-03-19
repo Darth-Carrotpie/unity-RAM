@@ -5,19 +5,30 @@ using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class MixerGroupButtons : MonoBehaviour {
-    List<AudioMixerGroup> snapshots = new List<AudioMixerGroup>();
+    List<AudioMixerGroup> groups = new List<AudioMixerGroup>();
     public AudioMixer mixer;
     public GameObject buttonPrefab;
     IEnumerator fadeAfterIntermedate;
-
+    AudioLevelControl audioLevelControl;
 
     void Start () {
-        snapshots.AddRange((AudioMixerGroup[])mixer.GetType().GetProperty("snapshots").GetValue(mixer, null));
-
+        audioLevelControl = FindObjectOfType<AudioLevelControl>();
+        CreateButtons();
     }
 
 
-    void Update () {
-		
-	}
+void CreateButtons()
+    {
+        groups.AddRange( mixer.FindMatchingGroups("Master"));
+
+        //groups.AddRange((AudioMixerGroup[])mixer.GetType().GetProperty("groups").GetValue(mixer, null));
+        foreach (AudioMixerGroup group in groups)
+        {
+            GameObject btn = Instantiate(buttonPrefab, transform);
+            btn.GetComponentInChildren<Text>().text = group.name;
+            btn.name = group.name;
+
+            btn.GetComponent<Button>().onClick.AddListener(() => audioLevelControl.MixerFadeToGroup(group));
+        }
+    }
 }

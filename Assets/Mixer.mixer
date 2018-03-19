@@ -21,17 +21,17 @@ AudioMixerController:
   m_UpdateMode: 0
   m_ExposedParameters:
   - guid: ed27ae16ec1c034419f19ef4795cbc19
-    name: MyExposedParam
+    name: Main theme
   - guid: f3ec569102457d9459009d54b214bd5a
-    name: MyExposedParam 1
+    name: Region 1
   - guid: 66e233ae6b4525c40a97299e9320b21a
-    name: MyExposedParam 2
+    name: Region 2
   - guid: 391f10816cf48b54fbc198924cb8c2c1
-    name: MyExposedParam 3
+    name: Region 3
   - guid: db7db08e6dd6e5c46b3f615f9df6c2d2
-    name: MyExposedParam 4
+    name: Region 4
   - guid: 8e903618859167441b364cd0950e793f
-    name: MyExposedParam 5
+    name: Region 5
   m_AudioMixerGroupViews:
   - guids:
     - d376eb21117d19346895bc5c1c2a0cf6
