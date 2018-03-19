@@ -682,7 +682,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 421587652}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 235cd3c2cf6b0b249b9fd5387e53af1d, type: 3}
   m_Name: 
@@ -2857,24 +2857,12 @@ MonoBehaviour:
     clip3: {fileID: 8300000, guid: ffc1d5d1a92b1434dbff0cbc40053242, type: 3}
     clip4: {fileID: 8300000, guid: c7fb35cd717923b4987332e7ce275720, type: 3}
     clip5: {fileID: 8300000, guid: d64fd8c52621b1648b18dea9f0e47655, type: 3}
-  - clip0: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip1: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip2: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip3: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip4: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip5: {fileID: 0}
-  - clip0: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip1: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip2: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip3: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip4: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip5: {fileID: 0}
-  - clip0: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip1: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip2: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip3: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip4: {fileID: 8300000, guid: 1f6a7dc9184b0264f9697ec8ce828b59, type: 3}
-    clip5: {fileID: 0}
+  - clip0: {fileID: 8300000, guid: 6265bf5ae4ddf334e80c53ee1a9eefe1, type: 3}
+    clip1: {fileID: 8300000, guid: 813348491f1093e44b932686166395ec, type: 3}
+    clip2: {fileID: 8300000, guid: ed48dc33be7c1e64594b752340ba84d5, type: 3}
+    clip3: {fileID: 8300000, guid: ffc1d5d1a92b1434dbff0cbc40053242, type: 3}
+    clip4: {fileID: 8300000, guid: c7fb35cd717923b4987332e7ce275720, type: 3}
+    clip5: {fileID: 8300000, guid: d64fd8c52621b1648b18dea9f0e47655, type: 3}
   playlist: 
 --- !u!114 &1796589288
 MonoBehaviour:
@@ -2888,6 +2876,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 005ccfb75aa41cc4ebdfb1e470be2db5, type: 2}
+  timeToFade: 1
+  timeToStay: 3
+  finalLevelA: -70
+  finalLevelB: 0
+  groupsToIgnore: 0000000001000000
+  counter: 0
 --- !u!1 &2049625744
 GameObject:
   m_ObjectHideFlags: 0
