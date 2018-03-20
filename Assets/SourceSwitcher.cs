@@ -44,7 +44,7 @@ public class SourceSwitcher : MonoBehaviour {
         sources[2].clip = trackGroups[playlist[currentlyPlayingInPlaylist]].clip2;
         sources[3].clip = trackGroups[playlist[currentlyPlayingInPlaylist]].clip3;
         sources[4].clip = trackGroups[playlist[currentlyPlayingInPlaylist]].clip4;
-        sources[5].clip = trackGroups[playlist[currentlyPlayingInPlaylist]].clip4;
+        sources[5].clip = trackGroups[playlist[currentlyPlayingInPlaylist]].clip5;
         if (currentlyPlayingInPlaylist < playlist.Count - 1)
             currentlyPlayingInPlaylist++;
 
