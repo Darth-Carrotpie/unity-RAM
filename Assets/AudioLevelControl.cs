@@ -7,7 +7,8 @@ public class AudioLevelControl : MonoBehaviour {
     List<AudioMixerGroup> groups = new List<AudioMixerGroup>();
     public AudioMixer mixer;
 
-    public float timeToFade;
+    public float timeToFadeIn;
+    public float timeToFadeOut;
     public float timeToStay;
     //public float intermediateLevelA;
     //public float intermediateLevelB;
@@ -86,6 +87,11 @@ public class AudioLevelControl : MonoBehaviour {
 
     IEnumerator FinalFade(AudioMixerGroup targetGroup, float progress, bool fade, float startingLevel)
     {
+        float timeToFade;
+        if (fade)
+            timeToFade = timeToFadeOut;
+        else
+            timeToFade = timeToFadeIn;
         while (progress <= timeToFade + timeToStay)
         {
             if (targetGroup != current && !fade)

@@ -2876,7 +2876,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 005ccfb75aa41cc4ebdfb1e470be2db5, type: 2}
-  timeToFade: 1
+  timeToFadeIn: 1
+  timeToFadeOut: 5
   timeToStay: 3
   finalLevelA: -70
   finalLevelB: 0
