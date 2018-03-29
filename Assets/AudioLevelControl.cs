@@ -16,7 +16,6 @@ public class AudioLevelControl : MonoBehaviour {
 
     IEnumerator fadeInProcess;
     IEnumerator fadeOutProcess;
-    public float counter = 0f;
     AudioMixerGroup current;
     float nextLevel;
     float previousLevel;
