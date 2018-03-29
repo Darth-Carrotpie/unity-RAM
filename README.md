@@ -33,4 +33,4 @@ Try settuping same style as in example, including but not limited to hierarchy, 
 
 **Important notices** Regarding the exposing AudioMixerGroup Volume parameter
 
-When you expose the parameter, you have to name it. For some reason instead of showing naming slot in the inspector Unity decided to hide it under the Mixer window tap. You click there and name it, then from script it will be able to call. Name it **the same** as the name of AudioMixerGroup, which is target for the script.
+When you expose the parameter, you have to name it. For some reason instead of showing naming slot in the inspector Unity decided to hide it under the Mixer window tab. You click there and name it, then from script it will be able to call. Name it **the same** as the name of AudioMixerGroup, which is target for the script.
