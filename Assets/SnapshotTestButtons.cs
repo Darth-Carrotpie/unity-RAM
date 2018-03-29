@@ -18,10 +18,8 @@ public class SnapshotTestButtons : MonoBehaviour {
 
     void SnapShotFill()
     {
-        //snapshots.AddRange(FindObjectsOfType<AudioMixerSnapshot>());
         snapshots.AddRange((AudioMixerSnapshot[])mixer.GetType().GetProperty("snapshots").GetValue(mixer, null));
 
-        //Debug.Log(snapshots.Count);
         foreach(AudioMixerSnapshot snapshot in snapshots)
         {
             if (CheckIfIsIntermediate(snapshot))

@@ -10,8 +10,6 @@ public class AudioLevelControl : MonoBehaviour {
     public float timeToFadeIn;
     public float timeToFadeOut;
     public float timeToStay;
-    //public float intermediateLevelA;
-    //public float intermediateLevelB;
     public float finalLevelA;
     public float finalLevelB;
     public int[] groupsToIgnore;
@@ -27,11 +25,6 @@ public class AudioLevelControl : MonoBehaviour {
     bool fade;
     void Start () {
         groups.AddRange(mixer.FindMatchingGroups("Master"));
-    }
-
-    void Update () {
-        /*if(fade)
-            Fade();*/
     }
 
     public void MixerFadeToGroup(AudioMixerGroup targetGroup)
@@ -62,28 +55,6 @@ public class AudioLevelControl : MonoBehaviour {
             }
         }
     }
-
-    /*void Fade()
-    {
-        if (counter < timeToFade)
-        {
-            if (previous != null)
-            {
-                float levelA = Mathf.Lerp(previousLevel, finalLevelA, counter / timeToFade);
-                mixer.SetFloat(previous.name, levelA);
-            }
-
-            float levelB = Mathf.Lerp(nextLevel, finalLevelB, counter / timeToFade);
-            mixer.SetFloat(current.name, levelB);
-
-            counter += Time.deltaTime;
-        }
-        else
-        {
-            fade = false;
-            counter = 0;
-        }
-    }*/
 
     IEnumerator FinalFade(AudioMixerGroup targetGroup, float progress, bool fade, float startingLevel)
     {
