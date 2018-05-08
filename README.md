@@ -1,5 +1,5 @@
 ## Unity-RAM
-A small experiment to make Realtime Audio Mixer (RAM) for Unity game engine. Unity's snapshot mixer system felt insufficient for our needs, so we felt like sharing.
+A small experiment to make Runtime Audio Mixer (RAM) for Unity game engine. Unity's snapshot mixer system felt insufficient for our needs, so we felt like sharing.
 Audio in the example made by Robertas Zutautas; (GNU General Public License v3.0)
 Scripts (C#) by Danielius Vargonas; (GNU General Public License v3.0)
 
@@ -12,7 +12,7 @@ They are not 'friends' for now, but it can be improved on that.
 
 
 #### Parameters:
-Core functionality contains in just 2 scripts under the "Realtime Audio Controller" GameObject in the scene:
+Core functionality contains in just 2 scripts under the "Runtime Audio Controller" GameObject in the scene:
 - SourceSwitcher.cs- Acts as a playlist generator, stacking track groups into order.
   - Track groups - tracks groups which are/can be played at the same time are stacked here. Group count shows how long the playlist will be.
   - Group size is not editable in the editor, but it can be increased/decreased in the script. Just look for the appropriate lines. The group size corresponds to the Child objects, and their AudioSource references - they MUST have the same amount. (possible improvement for later dev - auto generate the hierarchy)
